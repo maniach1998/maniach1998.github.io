@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700');
+
+* {
+  box-sizing: border-box;
+ }
+
+ body {
+   font-family: Yanone Kaffeesatz;
+   font-weight: 400;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	font-size: 2rem;
+ }
+ .title {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	border: 1px solid black;
+ 	font-size: 2rem;
+  padding: 0 20px 0 20px;
+  font-weight: 700;
+ }
+
+ #section1, #section2, #section3 {
+
+ 	padding: 12px;
+
+ }
+
+ #section1 .content, #section2 .content, #section3 .content {
+ 	font-size: 1.2rem;
+ 	background-color: #aaa;
+ 	position: relative;
+ 	border:1px solid black;
+ 	padding: 25px 10px 0px 10px;
+ }
+
+#section1 .title {
+	background-color: rgb(204,154,153);
+}
+
+#section2 .title {
+	background-color: rgb(162,72,67);
+  color: #fff;
+}
+
+#section3 .title {
+	background-color: rgb(225,209,159);
+}
+
+/* desktop  */
+@media only screen and (min-width: 992px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 33%;
+	}
+}
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width: 991px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+	}
+
+	#section1, #section2 {
+		width: 49.7%;
+	}
+
+	#section3 {
+		width: 100%;
+	}
+
+}
+
+/*mobile*/
+@media only screen and (max-width: 767px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 100%;
+	}
+
+}
