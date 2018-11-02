@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+  font-family: Lobster;
+}
+
+#shape{
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 75% 82%, 75% 100%, 52% 82%, 0 82%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 75% 82%, 75% 100%, 52% 82%, 0 82%);
+width:70%;
+margin-left: 15.5%;
+}
+
+h2{
+
+  padding-bottom: 150px;
+  /* text-shadow: 6px 2px 8px rgba(255,250,205,1); */
+  letter-spacing: 2px;
+}
+
+.faq{
+  background-color: black;
+}
+
+.alert{
+  visibility: hidden;
+}
+
+.alert .show{
+  visibility: visible !important;
+}

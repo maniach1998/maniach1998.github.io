@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: LemonChiffon !important;
+  font-family: Lobster !important;
+  letter-spacing: 1px !important;
+}
+
+/* ul li a{
+  color: #dc143c;
+} */
+
+#img1 {
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  margin: 20px 0px 20px 0px;
+}
+
+#img2 {
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  margin: 20px 0px 20px 0px;
+}
+
+ul li a{
+  transition-duration: 0.5s;
+}
+
+ul li a:hover{
+  color: #fe365e !important;
+  transform: scale(1.1,1.1);
+  transition-duration: 0.5s;
+  text-shadow: 4px 2px 6px rgba(0,0,0,0.3);
+}
+
+.active{
+  color: #000 !important;
+  border-bottom: 2px solid #000;
+}
+
+.btn-outline-success, .btn-primary{
+  border-color: #fff !important;
+  background-color: #fff !important;
+  color: #fe365e !important;
+}
+
+.btn-outline-success:hover, .btn-primary:hover{
+  border-color: #fff !important;
+  background-color: #fe365e !important;
+  color: #fff !important;
+}
+
+.bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

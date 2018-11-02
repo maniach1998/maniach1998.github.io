@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FoodHawks - Contact</title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="contact.css" type="text/css">
+  <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+  /* body{
+    font-family: Lobster;
+    letter-spacing:1px;
+  } */
+  #submit{
+    color:black !important;
+    border-color: black !important;
+    padding: 15px !important;
+    background-color: transparent !important;
+  }
+
+  #submit:hover{
+    background-color: LemonChiffon !important;
+  }
+  </style>
+</head>
+<body style="background-color: LemonChiffon;">
+
+<h1 class="text-center" style="color: #dc143c;">FoodHawks
+<small class="text-muted">Delivering your food, hot & spicy 😋</small>
+</h1>
+<hr>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="index.html" style="color: #dc143c;">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="order.html" style="color: #dc143c;">Order Now!</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="signup.html" style="color: #dc143c;">Sign Up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#" style="color: #dc143c;">Contact</a>
+  </li>
+</ul>
+<!-- <hr> -->
+<h1 class="display-1 text-center bounceIn" style="color: #dc143c;">Wanna talk to us?<br>
+<h3 class="text-center bounceIn"><small class="text-muted">Eager to help you! ❤️</small></h3>
+</h1>
+
+<div class="card bg-dark text-white text-center" id="shape">
+  <img class="card-img justify-content-center" src="q.jpg" alt="Card image">
+  <div class="card-img-overlay">
+    <h2 class="card-title" style="color:LemonChiffon;" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="300">Write to us! 🖋..or view our FAQ section 👋🏻</h2>
+    <form action="" method="post" data-sal-duration="1200" data-sal="zoom-out" data-sal-delay="600">
+      <fieldset>
+        <h5>Not finding what you want? Post a query!</h5><br>
+        <strong>Name</strong><input type="text" placeholder="Full Name" name="fname"/ style="margin: 5px;"><br>
+        </input>
+        <br>
+        <strong>Query</strong><textarea rows="5" cols="25" placeholder="Type here" name="msg" style="margin: 5px;"></textarea><br><br><br>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit" onclick="myFunction()">submit</button><br><br>
+        <div class="alert alert-warning alert-dismissible fade" role="alert" id="myPopup">
+          <strong>Done!</strong> Thanks for submitting your query to us. We will get back to you shortly.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<!-- <div class=" card bg=dark faq">
+  <div class="card-img-overlay">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  </div> -->
+
+
+<footer class="text-center">
+  Copyright Ⓒ 2018 FoodHawks All Rights Reserved. 🍤
+</footer>
+  <!-- Js scripts -->
+  <script src="./node_modules/sal.js/dist/sal.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    sal({
+      once: true
+    });
+  </script>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>
