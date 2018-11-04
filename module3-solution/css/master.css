@@ -7,10 +7,11 @@
 body {
  font-family: Yanone Kaffeesatz;
  font-weight: 400;
+ font-size: 1.2em;
 }
 
-.navbar {
-  height: 80px;
+.navbar h1{
+  font-size: 3em;
 }
 
 .heading {
