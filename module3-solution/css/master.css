@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700');
+
+* {
+  box-sizing: border-box;
+ }
+
+body {
+ font-family: Yanone Kaffeesatz;
+ font-weight: 400;
+}
+
 .navbar {
   height: 80px;
 }
