@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+body{
+  font-family: Staatliches;
+  width: 100% !important;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero h1{
+  font-size: 180px;
+  margin: 0;
+  padding: 0px 20px;
+}
+
+.hero {
+  background-color: #38E0FF;
+}
+
+.main-heading {
+  color: #888;
+  font-size: 50px;
+  padding: 0px 20px;
+}
+
+form {
+  font-size: 20px;
+  padding-top: 5px;
+  color: #38E0FF;
+}
+
+form input, textarea{
+  border-color: #AAA;
+  border-width: 1px;
+}
+
+@media (max-width: 575.98px) {
+  .hero h1{
+    font-size: 85px;
+  }
+
+  .main-heading{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero h1{
+    font-size: 120px;
+  }
+
+  .main-heading{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero h1{
+    font-size: 130px;
+  }
+
+  .main-heading{
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero h1{
+    font-size: 140px;
+  }
+
+  .main-heading{
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero h1{
+    font-size: 150px;
+  }
+
+  .main-heading{
+    font-size: 40px;
+  }
+}
